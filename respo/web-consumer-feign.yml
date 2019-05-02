@@ -1,0 +1,15 @@
+server:
+  port: 8900
+
+spring:
+  application:
+    name: consumer-8900-feign
+  main:
+    allow-bean-definition-overriding: true
+eureka:
+  client:
+    service-url:
+      defaultZone: http://dcy8700.com:8700/eureka/
+feign:
+  hystrix:
+    enabled: true
